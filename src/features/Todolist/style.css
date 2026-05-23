@@ -1,0 +1,35 @@
+.container {
+    border: 1px solid red;
+    padding: 5px;
+
+    display: flex;
+}
+
+.create-contact {
+    border: 1px solid blue;
+    padding: 5px;
+    flex: 1;
+}
+
+.list-contact {
+    border: 1px solid green;
+    padding: 5px;
+    flex: 1;
+}
+
+.input-wrapper {
+    margin: 10px;
+}
+
+.input-field {
+    padding: 5px;
+}
+
+.label {
+    display: block;
+}
+
+.error {
+    display: block;
+    color: red;
+}
