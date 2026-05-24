@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { v4 } from 'uuid';
 import { ContactForm } from './Components/ContactForm';
 import { ContactList } from './Components/ContactList';
@@ -54,17 +54,17 @@ const ContactBook = () => {
         setForm({ email: '', name: '', number: '' });
     }
 
-    const handleEdit = (id: any) => {
-        setIsEditId(id);
+    const handleEdit = useCallback((id: any) => {
         const editValue: any = contactList.find((val: any) => val.id === id)
+        setIsEditId(id);
         setForm(editValue);
-    }
+    }, [isEditId, form]);
 
-    const handleDelete = (id: any) => {
+    const handleDelete = useCallback((id: any) => {
         const _contactList = [...contactList];
         const result = _contactList.filter((val: any) => val.id !== id);
         setContactList(result);
-    }
+    }, []);
 
     return (
         <div className='container'>
