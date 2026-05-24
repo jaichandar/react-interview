@@ -1,5 +1,10 @@
-export const ContactList = (props: any) => {
+import { memo } from "react";
+
+export const ContactList = memo((props: any) => {
     const { contactList, handleEdit, handleDelete } = props;
+
+    console.log('list rerender');
+
     return (
         <table>
             <thead>
@@ -33,4 +38,4 @@ export const ContactList = (props: any) => {
             </tbody>
         </table>
     )
-}
+})
