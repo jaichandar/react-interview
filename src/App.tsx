@@ -1,11 +1,11 @@
-// import Pagination from "./features/pagination";
-import TodoList from "./features/Todolist";
+import Pagination from "./features/pagination";
+// import TodoList from "./features/Todolist";
 
 const App = () => {
   return (
     <div>
-      <TodoList />
-      {/* <Pagination /> */}
+      {/* <TodoList /> */}
+      <Pagination />
     </div>
   )
 }

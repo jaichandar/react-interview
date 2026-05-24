@@ -1,0 +1,43 @@
+.btn-wrapper {
+    border: 1px solid red;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    background: green;
+}
+
+button {
+    padding: 5px;
+    background-color: #143125;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.left {
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 10px;
+}
+
+.wrapper {
+    border: 1px solid blue;
+}
+
+.box-wrapper {
+    border: 1px solid red;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid green;
+    flex: 1;
+    flex-basis: 200px;
+}
+
